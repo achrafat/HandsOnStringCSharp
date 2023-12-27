@@ -12,3 +12,17 @@ C:\Users\athra\OneDrive\Bureau\consoleApp\ConsoleApp1\ConsoleApp1\obj\Debug\netc
 C:\Users\athra\OneDrive\Bureau\consoleApp\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.dll
 C:\Users\athra\OneDrive\Bureau\consoleApp\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.pdb
 C:\Users\athra\OneDrive\Bureau\consoleApp\ConsoleApp1\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.genruntimeconfig.cache
+C:\Users\athra\OneDrive\Bureau\consoleApp\HandsOnStringCSharp\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.exe
+C:\Users\athra\OneDrive\Bureau\consoleApp\HandsOnStringCSharp\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.deps.json
+C:\Users\athra\OneDrive\Bureau\consoleApp\HandsOnStringCSharp\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.runtimeconfig.json
+C:\Users\athra\OneDrive\Bureau\consoleApp\HandsOnStringCSharp\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.runtimeconfig.dev.json
+C:\Users\athra\OneDrive\Bureau\consoleApp\HandsOnStringCSharp\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.dll
+C:\Users\athra\OneDrive\Bureau\consoleApp\HandsOnStringCSharp\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleApp1.pdb
+C:\Users\athra\OneDrive\Bureau\consoleApp\HandsOnStringCSharp\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.csproj.AssemblyReference.cache
+C:\Users\athra\OneDrive\Bureau\consoleApp\HandsOnStringCSharp\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\athra\OneDrive\Bureau\consoleApp\HandsOnStringCSharp\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.AssemblyInfoInputs.cache
+C:\Users\athra\OneDrive\Bureau\consoleApp\HandsOnStringCSharp\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.AssemblyInfo.cs
+C:\Users\athra\OneDrive\Bureau\consoleApp\HandsOnStringCSharp\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\athra\OneDrive\Bureau\consoleApp\HandsOnStringCSharp\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.dll
+C:\Users\athra\OneDrive\Bureau\consoleApp\HandsOnStringCSharp\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.pdb
+C:\Users\athra\OneDrive\Bureau\consoleApp\HandsOnStringCSharp\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleApp1.genruntimeconfig.cache

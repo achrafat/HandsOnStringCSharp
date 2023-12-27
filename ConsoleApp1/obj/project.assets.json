@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\athra\\OneDrive\\Bureau\\consoleApp\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectUniqueName": "C:\\Users\\athra\\OneDrive\\Bureau\\consoleApp\\HandsOnStringCSharp\\ConsoleApp1\\ConsoleApp1.csproj",
       "projectName": "ConsoleApp1",
-      "projectPath": "C:\\Users\\athra\\OneDrive\\Bureau\\consoleApp\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectPath": "C:\\Users\\athra\\OneDrive\\Bureau\\consoleApp\\HandsOnStringCSharp\\ConsoleApp1\\ConsoleApp1.csproj",
       "packagesPath": "C:\\Users\\athra\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\athra\\OneDrive\\Bureau\\consoleApp\\ConsoleApp1\\ConsoleApp1\\obj\\",
+      "outputPath": "C:\\Users\\athra\\OneDrive\\Bureau\\consoleApp\\HandsOnStringCSharp\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

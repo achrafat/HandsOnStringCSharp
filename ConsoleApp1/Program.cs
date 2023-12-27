@@ -24,8 +24,12 @@ namespace ConsoleApp1
 
             /*  var response = HighestOccuredCharInString("diactionnairea");
               Console.WriteLine(response);*/
-            var response = IsStringUnique("abcdefgh");
-            Console.WriteLine(response);
+           /* var response = IsStringUnique("abcdefghe");
+            Console.WriteLine(response);*/
+            /*Console.WriteLine(FirstNotRepeatingCharacter("aaabbffffforrrx"));
+            Console.WriteLine(FirstNotRepeatingCharacter2("aaabbffffforrrx"));*/
+            int[] ints = { -4, -2, -1,1 ,3, 8 };
+            Console.WriteLine(ClosestNumberToZero(ints));
         }
         static string removeDuplicateString(string input)
         {
@@ -96,6 +100,81 @@ namespace ConsoleApp1
                 set.Add(c);
             }
             return set.Count == val.Length;
+        }
+        static char FirstNotRepeatingCharacter(string val)
+        {
+            Dictionary<char, int> dic = new Dictionary<char, int>();
+            char y = '_';
+            foreach (char c in val)
+            {
+                if (dic.ContainsKey(c))
+                {
+                    dic[c]++;
+                }
+                else
+                {
+                    dic[c] = 1;
+                }
+            }
+            foreach (char c in val)
+            {
+                if (dic[c] == 1)
+                {
+                    return c;
+                }
+            }
+            return y;
+        }
+
+        static char FirstNotRepeatingCharacter2(string val)
+        {
+            char y = '_';
+            foreach (char c in val)
+            {
+                if (val.IndexOf(c) == val.LastIndexOf(c))
+                {
+                    return c;
+                }
+            }
+            return y;
+        }
+        static int ClosestNumberToZero(int[] nums)
+        {
+            if ( nums is null || nums.Length == 0 ) return 0;
+            int ClosestNumber = nums[0];
+            int ClosestDistance = Math.Abs(nums[0]);
+
+            for (int i = 1; i < nums.Length; i++)
+            {
+                int CurrentDistance = Math.Abs(nums[i]);
+                if ((CurrentDistance < ClosestDistance)  || ( CurrentDistance==ClosestDistance && (nums[i] > 0)))
+                {
+                    ClosestDistance = CurrentDistance;
+                    ClosestNumber = nums[i];
+                }
+            }
+            return ClosestNumber;
+        }
+        static IList<int> TopKFrequent(int[] nums, int k)
+        {
+            var answer = nums
+                .GroupBy(n => n)            // Group elements by their values
+                .OrderByDescending(g => g.Count()) // Order groups by frequency in descending order
+                .Take(k)                    // Take the top k groups
+                .Select(g => g.Key)         // Select the keys (distinct elements) from the groups
+                .ToList();                  // Convert the result to a List<int>
+
+            return answer;
+        }
+        static int CalculateSumBetweenIndices(int[] array, int startIndex, int endIndex)
+        {
+            // Use LINQ to calculate the sum of numbers between the specified indices
+            int sum = array
+                .Skip(startIndex)
+                .Take(endIndex - startIndex + 1) // Add 1 to include the endIndex in the range
+                .Sum();
+
+            return sum;
         }
     }
 }

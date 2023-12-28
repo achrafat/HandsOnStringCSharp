@@ -166,6 +166,47 @@ namespace ConsoleApp1
 
             return answer;
         }
+        static int[] TopKFrequent2(int[] nums, int k)
+        {
+            // counting how many times each number appears
+            Dictionary<int, int> numberFrequency = new Dictionary<int, int>();
+            foreach (int i in nums)
+            {
+                if (numberFrequency.TryGetValue(i, out var temp))
+                {
+                    // Key exists, update its value
+                    numberFrequency[i] = temp + 1;
+                }
+                else
+                {
+                    // Key doesn't exist, add it to the dictionary with a count of 1
+                    numberFrequency[i] = 1;
+                }
+            }
+            // apply bucket sorting
+            //create an array of list in the size of the original nums array
+            List<int>[] bucket = new List<int>[nums.Length + 1];
+            // populate the bucket with list of numbers where the index represents their frequency
+            foreach (int key in numberFrequency.Keys)
+            {
+                int frequency = numberFrequency[key];
+                if (bucket[frequency] == null)
+                {
+                    bucket[frequency] = new List<int>();
+                }
+                bucket[frequency].Add(key);
+            }
+            List<int> result = new List<int>();
+            for (int i = bucket.Length - 1; i >= 0 && result.Count < k; i--)
+            {
+                if (bucket[i] != null)
+                {
+                    result.AddRange(bucket[i]);
+                }
+            }
+            return result.ToArray();
+
+        }
         static int CalculateSumBetweenIndices(int[] array, int startIndex, int endIndex)
         {
             // Use LINQ to calculate the sum of numbers between the specified indices

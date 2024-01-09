@@ -217,5 +217,36 @@ namespace ConsoleApp1
 
             return sum;
         }
+        static void findAllSubs(string str)
+        {
+            for (int i = 1; i <= str.Length; i++)
+            {
+                for (int j = 0; j <= str.Length - i; j++)
+                {
+                    string substring = str.Substring(j, i);
+                    Console.Write(substring + " ");
+                }
+            }
+        }
+        /* input: 9 30, output: The angle between hour hand and minute hand is 105 degrees
+           input: 13 30, output: The angle between hour hand and minute hand is 135 degrees
+           The logic is to find the difference in the angle of an hour and minute hand
+           from the position of 12 O Clock when the angle between them is zero. 
+           Each hour on the clock represents an angle of 30 degrees (360 divided by 12). 
+         Similarly, each minute on the clock will represent an angle of 6 degrees (360 divided by 60) and the angle for an hour will increase as the minutes for that hour increases.*/
+        static void FindAngleinTime(int hours, int mins)
+        {
+            double hourDegrees = (hours * 30) + (mins * 30.0 / 60);
+            double minuteDegrees = mins * 6;
+
+            double diff = Math.Abs(hourDegrees - minuteDegrees);
+
+            if (diff > 180)
+            {
+                diff = 360 - diff;
+            }
+
+            Console.WriteLine("The angle between hour hand and minute hand is {0} degrees", diff);
+        }
     }
 }
